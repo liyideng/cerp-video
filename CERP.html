@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国家教育类优质资源平台</title>
+    <link rel="stylesheet" href="css/font-awesome/all.min.css">
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            if (!window.FontAwesome || !document.querySelector('.fa')) {
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
+                document.head.appendChild(link);
+            }
+        }, 3000);
+    });
+    </script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', '微软雅黑', sans-serif;
+            line-height: 1.6;
+            margin: 2rem auto;
+            max-width: 1200px;
+            padding: 0 20px;
+            background-color: var(--background-color);
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 3px solid var(--secondary-color);
+            margin-bottom: 2rem;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #1a5276;
+        }
+
+        .description {
+            color: #555;
+            font-size: 0.95rem;
+            margin: 0.8rem 0;
+        }
+
+        .update-time {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        .card-icon {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <article class="card">
+            <h3><div class="card-icon"><i class="fas fa-school"></i></div>中小学安全教育平台</h3>
+            <p class="description">教育部官方安全教育资源平台，提供全面的安全知识学习与培训。</p>
+            <a href="https://www.xueanquan.com/" target="_blank">访问官网 →</a>
+        </article>
+
+        <article class="card">
+            <h3><div class="card-icon"><i class="fas fa-language"></i></div>中国日报英语点津</h3>
+            <p class="description">双语新闻与跨文化学习平台，提供专业语言进阶指南。</p>
+            <a href="https://language.chinadaily.com.cn/" target="_blank">访问官网 →</a>
+        </article>
+
+        <article class="card">
+            <h3><div class="card-icon"><i class="fas fa-book-open"></i></div>中国国家图书馆</h3>
+            <p class="description">国家级文献资源中心，含古籍善本与电子文献数据库。</p>
+            <a href="https://www.nlc.cn" target="_blank">访问官网 →</a>
+        </article>
+
+        <article class="card">
+            <h3><div class="card-icon"><i class="fas fa-atom"></i></div>科普中国官网</h3>
+            <p class="description">权威科学传播平台，涵盖前沿科技与生活科普内容。</p>
+            <a href="https://www.kepuchina.cn/" target="_blank">访问官网 →</a>
+        </article>
+
+        <article class="card">
+            <h3><div class="card-icon"><i class="fas fa-film"></i></div>央视网纪实</h3>
+            <p class="description">高清纪录片资源库，聚焦人文历史与社会发展纪实。</p>
+            <a href="https://jishi.cctv.com/" target="_blank">访问官网 →</a>
+        </article>
+
+        <article class="card">
+            <h3><div class="card-icon"><i class="fas fa-graduation-cap"></i></div>学习强国</h3>
+            <p class="description">综合性理论学习平台，整合党政要闻与慕课资源。</p>
+            <a href="https://www.xuexi.cn/" target="_blank">访问官网 →</a>
+        </article>
+
+        <article class="card">
+            <h3><div class="card-icon"><i class="fas fa-robot"></i></div>人工智能教育资源平台</h3>
+            <p class="description">人工智能教育资源平台，提供AI教育创新内容与学习资源。</p>
+            <a href="https://www.smartedu.cn/home/province?name=AI%E8%AF%95%E9%AA%8C%E5%9C%BA" target="_blank">访问官网 →</a>
+        </article>
+
+        <article class="card">
+            <h3><div class="card-icon"><i class="fas fa-passport"></i></div>海外留学生安全指南</h3>
+            <p class="description">提供海外留学安全知识、风险防范与应急处理指南，增强安全意识和防范能力。</p>
+            <a href="overseas_student_safety.html" target="_blank">查看视频 →</a>
+        </article>
+    </div>
+
+    <div class="update-time">
+        数据更新于乙巳蛇年四月初九 星期二 | 自适应设备浏览
+    </div>
+</body>
+
+</html>
