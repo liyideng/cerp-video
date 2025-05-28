@@ -1,14 +1,1 @@
-# 视频文件
-Vodes/
-*.mp4
-
-# 部署文件
-deploy.zip
-deploy_fixed.zip
-deploy_full.zip
-deploy_new.zip
-temp_deploy/
-
-# 系统文件
-.DS_Store
-Thumbs.db
+文件内容...
