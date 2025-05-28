@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海外留学生安全指南</title>
+    <!-- 添加Font Awesome图标库（优先本地，CDN备用） -->
+    <link rel="stylesheet" href="css/font-awesome/all.min.css">
+    <script>
+    // 检测本地Font Awesome是否加载成功
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            if (!window.FontAwesome || !document.querySelector('.fa')) {
+                // 本地加载失败，加载CDN版本
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
+                document.head.appendChild(link);
+            }
+        }, 3000); // 3秒后检查
+    });
+    </script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', '微软雅黑', sans-serif;
+            line-height: 1.6;
+            margin: 2rem auto;
+            max-width: 1200px;
+            padding: 0 20px;
+            background-color: var(--background-color);
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 3px solid var(--secondary-color);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .video-title {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .video-desc {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .video-source {
+            color: #7f8c8d;
+            font-size: 0.85rem;
+            font-style: italic;
+            text-align: right;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1><i class="fas fa-passport"></i> 海外留学生安全指南</h1>
+        <p>提供海外留学安全知识、风险防范与应急处理指南，增强安全意识和防范能力</p>
+    </div>
+
+    <div class="video-container">
+        <!-- 视频1 -->
+        <div class="video-card">
+            <video controls>
+                <source src="vodes/liuxue1.mp4" type="video/mp4">
+                您的浏览器不支持视频播放
+            </video>
+            <h3 class="video-title">1. 海外留学安全小锦囊上篇</h3>
+            <p class="video-desc">介绍海外留学期间的基本安全注意事项和防范措施</p>
+            <div class="video-source">来源：领事直通车抖音号</div>
+        </div>
+
+        <!-- 视频2 -->
+        <div class="video-card">
+            <video controls>
+                <source src="vodes/liuxue2.mp4" type="video/mp4">
+                您的浏览器不支持视频播放
+            </video>
+            <h3 class="video-title">2. 海外留学安全小锦囊下篇</h3>
+            <p class="video-desc">介绍海外留学期间的基本安全注意事项和防范措施</p>
+            <div class="video-source">来源：领事直通车抖音号</div>
+        </div>
+
+        <!-- 视频3 -->
+        <div class="video-card">
+            <video controls>
+                <source src="vodes/lvxing1.mp4" type="video/mp4">
+                您的浏览器不支持视频播放
+            </video>
+            <h3 class="video-title">3. 海外旅行安全小锦囊上篇</h3>
+            <p class="video-desc">提供海外旅行中的基本安全知识和防范建议</p>
+            <div class="video-source">来源：领事直通车抖音号</div>
+        </div>
+
+        <!-- 视频4 -->
+        <div class="video-card">
+            <video controls>
+                <source src="vodes/lvxing2.mp4" type="video/mp4">
+                您的浏览器不支持视频播放
+            </video>
+            <h3 class="video-title">4. 海外旅行安全小锦囊下篇</h3>
+            <p class="video-desc">提供海外旅行中的基本安全知识和防范建议</p>
+            <div class="video-source">来源：领事直通车抖音号</div>
+        </div>
+    </div>
+
+    <a href="CERP.html" class="back-link"><i class="fas fa-arrow-left"></i> 返回教育平台</a>
+</body>
+
+</html>
